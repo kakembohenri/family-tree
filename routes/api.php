@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\MembersController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,4 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::get('/trees', function () {
+    $users = User::tree()->get();
+    return $users->toTree()->toJson();
 });

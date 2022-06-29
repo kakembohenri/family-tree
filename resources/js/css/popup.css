@@ -1,0 +1,123 @@
+.popup {
+  position: absolute;
+  background-color: blanchedalmond;
+  width: fit-content;
+  top: 10%;
+  left: 25%;
+  z-index: 1000;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-conatiner-header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 0.1rem solid black;
+}
+.details-conatiner-header > img {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 10px !important;
+  border-radius: 100px;
+  border: 0.1rem solid black;
+  margin: 1rem 2rem;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+}
+.details-conatiner-header > span h3 {
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  color: rgb(122, 118, 118);
+  margin-top: 1rem;
+}
+
+.details-conatiner-header > span p {
+  align-items: flex-start;
+  text-align: center;
+  color: rgb(122, 118, 118);
+  margin-top: 1rem;
+}
+
+.details-conatiner-header > span a {
+  text-decoration: none;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.details-conatiner-header > span a:hover,
+.details-conatiner-header > span a:active {
+  color: rgb(122, 118, 118);
+}
+
+.options-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  padding-inline-start: 0;
+  padding: 0rem 2rem;
+  background-color: black;
+}
+.option {
+  list-style: none;
+  padding: 0.3rem 0.5rem;
+}
+
+.option > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+}
+
+.option > a:hover,
+.option > a:active {
+  color: blanchedalmond;
+  cursor: pointer;
+  padding-bottom: 0.3rem;
+  text-decoration: none;
+  border-bottom: 0.1rem solid blanchedalmond;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details > h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3rem;
+  background: grey;
+  padding-left: 2rem;
+}
+
+.vitals-container {
+  display: flex;
+  flex-direction: column;
+  /* padding: 0.5rem 2rem;
+  padding-inline-start: 2rem; */
+}
+
+.vital {
+  list-style: none;
+  padding: 0.5rem 2rem;
+  border-bottom: 0.1rem rgb(167, 164, 164) solid;
+}
+
+h6 {
+  font-weight: lighter;
+  padding-bottom: 0.5rem;
+}
+
+.vital > p {
+  font-weight: bold;
+}
